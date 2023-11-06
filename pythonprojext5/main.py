@@ -25,7 +25,7 @@ if __name__ == "__main__":
         bday = item['Birthday'].strftime("%d-%m")
         # print(bday)
         if (today == bday) and yearNow not in str(item['Year']):
-            sendEmail(item['Email'], "Happy Birthday", item['Dialogue'])
+            sendEmail(item['Email'], "your message", item['Dialogue'])
             writeInd.append(index)
 
     # print(writeInd)
